@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Lights - Abbigliamento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            background: #fafbfc;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-card h3 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            color: #764ba2;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>✨ Northern Lights ✨</h1>
+        <p>Abbigliamento Elegante e Minimalista</p>
+    </header>
+
+    <nav>
+        <a href="#magliette">Magliette</a>
+        <a href="#felpe">Felpe</a>
+        <a href="#pantaloni">Pantaloni</a>
+        <a href="#scarpe">Scarpe</a>
+    </nav>
+
+    <main>
+        <!-- Sezione Magliette -->
+        <section id="magliette">
+            <h2>👕 Magliette</h2>
+            <p class="section-description">Magliette in cotone 100% premium, perfette per ogni stagione.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop" alt="Basic White" class="product-image">
+                    <div class="product-info">
+                        <h3>Basic White</h3>
+                        <p>Maglietta classica bianca, versatile e elegante.</p>
+                        <div class="price">€19.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb12dd?w=400&h=400&fit=crop" alt="Aurora Blue" class="product-image">
+                    <div class="product-info">
+                        <h3>Aurora Blue</h3>
+                        <p>Azzurro magnetico che richiama il cielo notturno.</p>
+                        <div class="price">€24.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1549092143-20462459ad2b?w=400&h=400&fit=crop" alt="Northern Green" class="product-image">
+                    <div class="product-info">
+                        <h3>Northern Green</h3>
+                        <p>Verde smeraldo con dettagli luminosi.</p>
+                        <div class="price">€24.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1578992619644-d6f5df21d923?w=400&h=400&fit=crop" alt="Midnight Black" class="product-image">
+                    <div class="product-info">
+                        <h3>Midnight Black</h3>
+                        <p>Nero profondo, perfetto per ogni occasione.</p>
+                        <div class="price">€19.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Felpe -->
+        <section id="felpe">
+            <h2>🧥 Felpe</h2>
+            <p class="section-description">Felpe in cotone biologico, comode e calde. Ideali per le serate invernali.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=400&h=400&fit=crop" alt="Cozy Violet" class="product-image">
+                    <div class="product-info">
+                        <h3>Cozy Violet</h3>
+                        <p>Viola elegante, morbida e avvolgente.</p>
+                        <div class="price">€49.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556821552-5ee0d2b2e2bf?w=400&h=400&fit=crop" alt="Arctic Ice" class="product-image">
+                    <div class="product-info">
+                        <h3>Arctic Ice</h3>
+                        <p>Bianco ghiaccio con finitura premium.</p>
+                        <div class="price">€49.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556821552-23d516b00c5f?w=400&h=400&fit=crop" alt="Deep Ocean" class="product-image">
+                    <div class="product-info">
+                        <h3>Deep Ocean</h3>
+                        <p>Blu scuro che richiama l'oceano glaciale.</p>
+                        <div class="price">€54.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556821552-71c84e8eac77?w=400&h=400&fit=crop" alt="Forest Shadow" class="product-image">
+                    <div class="product-info">
+                        <h3>Forest Shadow</h3>
+                        <p>Verde foresta scuro e sofisticato.</p>
+                        <div class="price">€54.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Pantaloni -->
+        <section id="pantaloni">
+            <h2>👖 Pantaloni</h2>
+            <p class="section-description">Pantaloni moderni e confortevoli, perfetti per il quotidiano.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=400&fit=crop" alt="Classic Black" class="product-image">
+                    <div class="product-info">
+                        <h3>Classic Black</h3>
+                        <p>Pantaloni neri eleganti e versatili.</p>
+                        <div class="price">€59.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=400&fit=crop" alt="Stone Grey" class="product-image">
+                    <div class="product-info">
+                        <h3>Stone Grey</h3>
+                        <p>Grigio chiaro, neutro e sofisticato.</p>
+                        <div class="price">€59.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=400&fit=crop" alt="Navy Blue" class="product-image">
+                    <div class="product-info">
+                        <h3>Navy Blue</h3>
+                        <p>Blu navy profondo e ageless.</p>
+                        <div class="price">€64.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=400&fit=crop" alt="Charcoal" class="product-image">
+                    <div class="product-info">
+                        <h3>Charcoal</h3>
+                        <p>Grigio scuro con trama delicata.</p>
+                        <div class="price">€59.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Scarpe -->
+        <section id="scarpe">
+            <h2>👟 Scarpe</h2>
+            <p class="section-description">Scarpe eleganti e comode per ogni occasione.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop" alt="Urban White" class="product-image">
+                    <div class="product-info">
+                        <h3>Urban White</h3>
+                        <p>Sneaker bianche minimalist, sempre di moda.</p>
+                        <div class="price">€79.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop" alt="Sleek Black" class="product-image">
+                    <div class="product-info">
+                        <h3>Sleek Black</h3>
+                        <p>Scarpe nere eleganti per il lavoro.</p>
+                        <div class="price">€84.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop" alt="Arctic Grey" class="product-image">
+                    <div class="product-info">
+                        <h3>Arctic Grey</h3>
+                        <p>Grigio glaciale con suola innovativa.</p>
+                        <div class="price">€84.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop" alt="Midnight Premium" class="product-image">
+                    <div class="product-info">
+                        <h3>Midnight Premium</h3>
+                        <p>Scarpe premium con finiture luxe.</p>
+                        <div class="price">€99.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Chi Siamo -->
+        <section>
+            <h2>✨ Chi Siamo</h2>
+            <p class="section-description">
+                Northern Lights è un brand di abbigliamento che fonde semplicità ed eleganza. Ogni capo è realizzato con materiali premium 
+                e design minimalista, ispirato alla bellezza naturale dell'aurora boreale.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Northern Lights. Tutti i diritti riservati.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Contatti: info@northernlights.com | Tel: +39 123 456 7890</p>
+    </footer>
+</body>
+</html>
