@@ -1,357 +1,47 @@
-
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportZone - Il tuo portale sportivo</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        nav a:hover {
-            opacity: 0.8;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #ff6b6b;
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: background 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn:hover {
-            background: #ff5252;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .sports-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .sport-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .sport-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .sport-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .sport-info {
-            padding: 1.5rem;
-        }
-
-        .sport-info h3 {
-            color: #667eea;
-            margin-bottom: 0.5rem;
-        }
-
-        .sport-info p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        section {
-            margin: 3rem 0;
-        }
-
-        section h2 {
-            color: #667eea;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .news-item {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-left: 4px solid #667eea;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-        }
-
-        .news-item h4 {
-            color: #667eea;
-            margin-bottom: 0.5rem;
-        }
-
-        .news-item .date {
-            color: #999;
-            font-size: 0.9rem;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        footer p {
-            margin: 0.5rem 0;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: #667eea;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .stat {
-            text-align: center;
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 10px;
-        }
-
-        .stat h3 {
-            color: #667eea;
-            font-size: 2.5rem;
-        }
-
-        .stat p {
-            color: #666;
-        }
-    </style>
+    <title>Northern Lights Fashion</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header e Navigazione -->
     <header>
+        <h1>Welcome to Northern Lights Fashion</h1>
         <nav>
-            <div class="logo">🏆 SportZone</div>
             <ul>
-                <li><a href="#sports">Sport</a></li>
-                <li><a href="#news">Notizie</a></li>
-                <li><a href="#about">Chi Siamo</a></li>
-                <li><a href="#contact">Contatti</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Benvenuto in SportZone</h1>
-        <p>Scopri il mondo dello sport con noi!</p>
-        <button class="btn">Inizia Ora</button>
-    </section>
-
-    <!-- Contenuto principale -->
-    <div class="container">
-        <!-- Sezione Sport -->
-        <section id="sports">
-            <h2>Sport Principali</h2>
-            <div class="sports-grid">
-                <div class="sport-card">
-                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400" alt="Calcio">
-                    <div class="sport-info">
-                        <h3>⚽ Calcio</h3>
-                        <p>Il sport più amato al mondo. Scopri le ultime notizie dalle principali leghe europee.</p>
-                    </div>
-                </div>
-
-                <div class="sport-card">
-                    <img src="https://images.unsplash.com/photo-1518611505868-48510c2e2e3f?w=400" alt="Basket">
-                    <div class="sport-info">
-                        <h3>🏀 Basket</h3>
-                        <p>L'emozione della pallacanestro. Seguici per gli ultimi risultati e statistiche.</p>
-                    </div>
-                </div>
-
-                <div class="sport-card">
-                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400" alt="Tennis">
-                    <div class="sport-info">
-                        <h3>🎾 Tennis</h3>
-                        <p>Eleganza e potenza. Conosci i migliori tennisti del mondo.</p>
-                    </div>
-                </div>
-
-                <div class="sport-card">
-                    <img src="https://images.unsplash.com/photo-1532628346881-b72b27e84530?w=400" alt="Nuoto">
-                    <div class="sport-info">
-                        <h3>🏊 Nuoto</h3>
-                        <p>Velocità in acqua. Scopri i campioni del nuoto mondiale.</p>
-                    </div>
-                </div>
-
-                <div class="sport-card">
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400" alt="Fitness">
-                    <div class="sport-info">
-                        <h3>💪 Fitness</h3>
-                        <p>Mantieniti in forma con i nostri consigli e programmi di allenamento.</p>
-                    </div>
-                </div>
-
-                <div class="sport-card">
-                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400" alt="Pallavolo">
-                    <div class="sport-info">
-                        <h3>🏐 Pallavolo</h3>
-                        <p>Gioco di squadra e coordinazione. Segui i migliori team mondiali.</p>
-                    </div>
-                </div>
-            </div>
+    <main>
+        <section id="home">
+            <h2>Latest Collections</h2>
+            <p>Explore our latest collections inspired by the beauty of the Northern Lights.</p>
         </section>
-
-        <!-- Statistiche -->
-        <section>
-            <h2>I Nostri Numeri</h2>
-            <div class="stats">
-                <div class="stat">
-                    <h3>500K+</h3>
-                    <p>Visitatori al mese</p>
-                </div>
-                <div class="stat">
-                    <h3>50+</h3>
-                    <p>Sport diversi</p>
-                </div>
-                <div class="stat">
-                    <h3>1000+</h3>
-                    <p>Articoli pubblicati</p>
-                </div>
-                <div class="stat">
-                    <h3>24/7</h3>
-                    <p>Aggiornamenti live</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Notizie -->
-        <section id="news">
-            <h2>Ultime Notizie</h2>
-            <div class="news-item">
-                <h4>🔥 Nuovo campionato mondiale iniziato!</h4>
-                <p class="date">5 Marzo 2026</p>
-                <p>I migliori atleti del mondo si sfidano nel nuovo campionato internazionale. Segui tutte le gare in diretta con SportZone.</p>
-            </div>
-            <div class="news-item">
-                <h4>⭐ Giovane talento scoperto</h4>
-                <p class="date">4 Marzo 2026</p>
-                <p>Una promessa dello sport italiano si afferma a livello internazionale con prestazioni straordinarie.</p>
-            </div>
-            <div class="news-item">
-                <h4>🏅 Record mondiale battuto!</h4>
-                <p class="date">3 Marzo 2026</p>
-                <p>Un atleta stabilisce un nuovo record mondiale in una competizione memorabile.</p>
-            </div>
-        </section>
-
-        <!-- Chi Siamo -->
         <section id="about">
-            <h2>Chi Siamo</h2>
-            <p style="text-align: center; font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">
-                SportZone è il portale numero uno per gli appassionati di sport. Con una community di milioni di utenti, 
-                forniamo notizie aggiornate in tempo reale, statistiche dettagliate e analisi approfondite di tutti i principali sport mondiali.
-            </p>
+            <h2>About Us</h2>
+            <p>We are passionate about fashion and the natural wonders of our planet.</p>
         </section>
-    </div>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <p>&copy; 2026 SportZone. Tutti i diritti riservati.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-        </div>
-        <p style="margin-top: 1.5rem; font-size: 0.9rem;">Contatti: info@sportzone.it | Tel: +39 123 456 7890</p>
+        <section id="products">
+            <h2>Our Products</h2>
+            <ul>
+                <li>Summer Collection</li>
+                <li>Winter Collection</li>
+                <li>Accessories</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us at: <a href="mailto:info@northernlightsfashion.com">info@northernlightsfashion.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Northern Lights Fashion. All rights reserved.</p>
     </footer>
 </body>
 </html>
