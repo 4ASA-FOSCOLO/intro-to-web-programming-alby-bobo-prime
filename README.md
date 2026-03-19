@@ -3,3 +3,8 @@
 # Sacco e Bovino
 
 [LINK](https://4asa-foscolo.github.io/intro-to-web-programming-alby-bobo-prime/)
+
+# TO DO 
+- div e section
+- hero section
+- identità, nome, trttarlo come un centro sportivo che offre questi sport
