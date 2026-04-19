@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Sportivo Vitalità</title>
+    <title>Centro Sportivo Albi e Bobo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,7 +66,7 @@
 
     <!-- HERO SECTION -->
     <div class="hero">
-        <h1>Centro Sportivo Vitalità</h1>
+        <h1>Centro Sportivo Albi e Bobo</h1>
         <p>Il tuo centro sportivo che offre tutti questi sport</p>
     </div>
 
@@ -74,7 +74,7 @@
     <section>
         <h2>Chi siamo</h2>
         <p style="text-align: center; font-size: 1.3rem;">
-            Siamo il <strong>Centro Sportivo Vitalità</strong>.<br>
+            Siamo il <strong>Centro Sportivo Albi e Bobo</strong>.<br>
             Un centro sportivo completo dove puoi praticare tanti sport diversi, 
             divertirti e stare bene.
         </p>
@@ -131,7 +131,7 @@
     </section>
 
     <footer>
-        © Centro Sportivo Vitalità
+        © Centro Sportivo Albi e Bobo
     </footer>
 
 </body>
