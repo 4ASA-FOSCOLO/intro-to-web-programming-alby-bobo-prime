@@ -1,159 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Sportivo Vitalità</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background-color: #00bfff;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+        }
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            background-color: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Centro Sportivo Vitalità</h1>
+        <p>Il tuo centro sportivo che offre tutti questi sport</p>
+    </div>
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+    <!-- IDENTITÀ / CHI SIAMO -->
+    <section>
+        <h2>Chi siamo</h2>
+        <p style="text-align: center; font-size: 1.3rem;">
+            Siamo il <strong>Centro Sportivo Vitalità</strong>.<br>
+            Un centro sportivo completo dove puoi praticare tanti sport diversi, 
+            divertirti e stare bene.
+        </p>
+    </section>
 
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url('https://source.unsplash.com/1920x1080/?sports-center') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
+    <!-- SPORT DI SQUADRA -->
+    <section style="background-color: #f8f9fa;">
+        <h2>Sport di squadra</h2>
+        <ul>
+            <li>Calcio</li>
+            <li>Basket</li>
+            <li>Pallavolo</li>
+            <li>Rugby</li>
+        </ul>
+    </section>
 
-.hero-content {
-    max-width: 900px;
-    padding: 20px;
-}
+    <!-- SPORT INDIVIDUALI -->
+    <section>
+        <h2>Sport individuali</h2>
+        <ul>
+            <li>Tennis</li>
+            <li>Nuoto</li>
+            <li>Atletica</li>
+            <li>Ciclismo</li>
+        </ul>
+    </section>
 
-.hero h1 {
-    font-size: 4.2rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
+    <!-- SPORT INVERNALI -->
+    <section style="background-color: #f8f9fa;">
+        <h2>Sport invernali</h2>
+        <ul>
+            <li>Sci</li>
+            <li>Snowboard</li>
+            <li>Pattinaggio sul ghiaccio</li>
+        </ul>
+    </section>
 
-.hero h2 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-}
+    <!-- SPORT ESTREMI -->
+    <section>
+        <h2>Sport estremi</h2>
+        <ul>
+            <li>BMX</li>
+            <li>Skateboard</li>
+            <li>Arrampicata</li>
+        </ul>
+    </section>
 
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
+    <!-- CONTATTI -->
+    <section style="background-color: #333; color: white;">
+        <h2>Contatti</h2>
+        <p style="text-align: center; font-size: 1.3rem;">
+            Email: esempio@email.com
+        </p>
+    </section>
 
-.btn {
-    background-color: #00bfff;
-    color: white;
-    padding: 16px 45px;
-    font-size: 1.4rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
+    <footer>
+        © Centro Sportivo Vitalità
+    </footer>
 
-.btn:hover {
-    background-color: #0099cc;
-    transform: scale(1.08);
-}
-
-/* Contenitore centrale */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Sezioni */
-section {
-    padding: 80px 0;
-}
-
-.about {
-    background-color: #f8f9fa;
-}
-
-.about p {
-    font-size: 1.3rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.sports h2,
-.about h2,
-.contact h2 {
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #003087;
-}
-
-/* Categorie sport */
-.sport-category {
-    margin-bottom: 60px;
-}
-
-.sport-category h3 {
-    font-size: 1.9rem;
-    margin-bottom: 20px;
-    color: #003087;
-    border-bottom: 3px solid #00bfff;
-    display: inline-block;
-    padding-bottom: 8px;
-}
-
-.sport-category ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-}
-
-.sport-category li {
-    background: white;
-    padding: 18px 22px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    font-size: 1.2rem;
-    transition: transform 0.2s;
-}
-
-.sport-category li:hover {
-    transform: translateY(-5px);
-}
-
-/* Contatti */
-.contact {
-    background-color: #003087;
-    color: white;
-    text-align: center;
-}
-
-.contact p {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-}
-
-.contact a {
-    color: #00bfff;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #222;
-    color: #aaa;
-    font-size: 0.9rem;
-}
+</body>
+</html>
