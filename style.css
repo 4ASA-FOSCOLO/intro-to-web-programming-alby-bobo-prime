@@ -1,6 +1,5 @@
-/* ====================== STILI MODIFICATI ====================== */
 
-/* Base generale - ottimizzato per centro sportivo */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,7 +9,6 @@ body {
     background-color: #f8f9fa;
 }
 
-/* HERO SECTION - MODIFICATA e potenziata */
 .hero {
     background: linear-gradient(135deg, #00bfff, #0077cc);
     color: white;
@@ -47,7 +45,6 @@ body {
     z-index: 2;
 }
 
-/* SEZIONI - ottimizzate (div e section) */
 section {
     padding: 80px 20px;
     max-width: 1100px;
@@ -59,7 +56,6 @@ section:nth-child(even) {
     background-color: #f8f9fa;
 }
 
-/* TITOLI H2 - più sportivi e centrati */
 h2 {
     font-size: 2.4rem;
     text-align: center;
@@ -78,7 +74,6 @@ h2::after {
     border-radius: 2px;
 }
 
-/* LISTE SPORT - migliorate con effetto hover */
 ul {
     list-style: none;
     padding: 0;
@@ -102,7 +97,6 @@ li:hover {
     background-color: #f0faff;
 }
 
-/* CHI SIAMO - identità rafforzata */
 section:first-of-type p {
     font-size: 1.45rem;
     line-height: 1.8;
@@ -114,7 +108,6 @@ section:first-of-type p {
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-/* CONTATTI E FOOTER - migliorati */
 section[style*="background-color: #333"] {
     background-color: #222 !important;
     color: white;
@@ -128,7 +121,6 @@ footer {
     font-size: 1.1rem;
 }
 
-/* RESPONSIVE - aggiunto per mobile */
 @media (max-width: 768px) {
     .hero {
         padding: 100px 15px 80px;
