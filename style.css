@@ -51,7 +51,6 @@ section {
     margin: 0 auto;
 }
 
-/* Sezioni con sfondo alternato (sostituisce gli inline style) */
 section:nth-child(even) {
     background-color: #f8f9fa;
 }
