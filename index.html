@@ -8,6 +8,38 @@
 </head>
 <body>
 
+    <!-- NAVBAR con le sezioni richieste -->
+    <nav style="background-color: #222; color: white; padding: 0.8rem 5%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap;">
+
+            <!-- Logo -->
+            <a href="#" style="color: white; text-decoration: none; font-size: 1.6rem; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+                🏟️ Albi e Bobo
+            </a>
+
+            <!-- Menu con le sezioni richieste + Home e Contatti per completezza -->
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem; font-size: 1.1rem;">
+                <li><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                <li><a href="#chi-siamo" style="color: white; text-decoration: none; transition: color 0.3s;">Chi siamo</a></li>
+                <li><a href="#sport" style="color: white; text-decoration: none; transition: color 0.3s;">Sport</a></li>
+                
+                <!-- ABBONAMENTI -->
+                <li><a href="abbonamenti.html" style="color: white; text-decoration: none; transition: color 0.3s; font-weight: bold;">Abbonamenti</a></li>
+                
+                <!-- MERCHANDISING -->
+                <li><a href="merchandising.html" style="color: white; text-decoration: none; transition: color 0.3s; font-weight: bold;">Merchandising</a></li>
+                
+                <li><a href="#contatti" style="color: white; text-decoration: none; transition: color 0.3s;">Contatti</a></li>
+            </ul>
+
+            <!-- Pulsante rapido -->
+            <a href="abbonamenti.html" style="background-color: #ffcc00; color: #222; padding: 10px 22px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
+                Iscriviti ora
+            </a>
+
+        </div>
+    </nav>
+
     <!-- HERO SECTION -->
     <div class="hero">
         <h1>Centro Sportivo Albi e Bobo</h1>
@@ -15,7 +47,7 @@
     </div>
 
     <!-- IDENTITÀ / CHI SIAMO -->
-    <section>
+    <section id="chi-siamo">
         <h2>Chi siamo</h2>
         <p style="text-align: center; font-size: 1.3rem;">
             Siamo il <strong>Centro Sportivo Albi e Bobo</strong>.<br>
@@ -25,7 +57,7 @@
     </section>
 
     <!-- SPORT DI SQUADRA -->
-    <section>
+    <section id="sport">
         <h2>Sport di squadra</h2>
         <ul>
             <a href="calcio.html"><li>Calcio</li></a>
@@ -67,7 +99,7 @@
     </section>
 
     <!-- CONTATTI -->
-    <section style="background-color: #333; color: white;">
+    <section id="contatti" style="background-color: #333; color: white;">
         <h2>Contatti</h2>
         <p style="text-align: center; font-size: 1.3rem;">
             Email: esempio@email.com
