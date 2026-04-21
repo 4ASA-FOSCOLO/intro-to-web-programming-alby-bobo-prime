@@ -8,29 +8,36 @@
 </head>
 <body>
 
-    <!-- NAVBAR (usa classi CSS esterne) -->
-    <nav class="navbar">
-        
-        <!-- Logo -->
-        <a href="#" class="navbar-logo">
-            🏟️ Albi e Bobo
-        </a>
+    <!-- NAVBAR con le sezioni richieste -->
+    <nav style="background-color: #222; color: white; padding: 0.8rem 5%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap;">
 
-        <!-- Menu -->
-        <ul class="navbar-menu" id="navbarMenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#chi-siamo">Chi siamo</a></li>
-            <li><a href="#sport">Sport</a></li>
-            <li><a href="abbonamenti.html">Abbonamenti</a></li>
-            <li><a href="merchandising.html">Merchandising</a></li>
-            <li><a href="#contatti">Contatti</a></li>
-        </ul>
+            <!-- Logo -->
+            <a href="#" style="color: white; text-decoration: none; font-size: 1.6rem; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+                Albi e Bobo
+            </a>
 
-        <!-- Hamburger (visibile solo su telefono) -->
-        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+            <!-- Menu con le sezioni richieste + Home e Contatti per completezza -->
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem; font-size: 1.1rem;">
+                <li><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                <li><a href="#chi-siamo" style="color: white; text-decoration: none; transition: color 0.3s;">Chi siamo</a></li>
+                <li><a href="#sport" style="color: white; text-decoration: none; transition: color 0.3s;">Sport</a></li>
+                
+                <!-- ABBONAMENTI -->
+                <li><a href="abbonamenti.html" style="color: white; text-decoration: none; transition: color 0.3s; font-weight: bold;">Abbonamenti</a></li>
+                
+                <!-- MERCHANDISING -->
+                <li><a href="merchandising.html" style="color: white; text-decoration: none; transition: color 0.3s; font-weight: bold;">Merchandising</a></li>
+                
+                <li><a href="#contatti" style="color: white; text-decoration: none; transition: color 0.3s;">Contatti</a></li>
+            </ul>
 
-        <!-- Pulsante Iscriviti ora -->
-        <a href="abbonamenti.html" class="navbar-cta">Iscriviti ora</a>
+            <!-- Pulsante rapido -->
+            <a href="abbonamenti.html" style="background-color: #ffcc00; color: #222; padding: 10px 22px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: all 0.3s;">
+                Iscriviti ora
+            </a>
+
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
@@ -102,17 +109,6 @@
     <footer>
         © Centro Sportivo Albi e Bobo
     </footer>
-
-    <!-- Script per il menu mobile (rimane qui perché è comportamento, non stile) -->
-    <script>
-        const hamburger = document.getElementById('hamburgerBtn');
-        const menu = document.getElementById('navbarMenu');
-
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('show');
-            hamburger.textContent = menu.classList.contains('show') ? '✕' : '☰';
-        });
-    </script>
 
 </body>
 </html>
