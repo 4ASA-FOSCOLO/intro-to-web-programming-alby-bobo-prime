@@ -14,7 +14,7 @@
         color: #eaeaea;
     }
 
-    /* HERO PARALLAX */
+    /* HERO */
     .hero {
         background-image: url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d");
         background-attachment: fixed;
@@ -43,7 +43,6 @@
         z-index: 2;
     }
 
-    /* 🔥 TITOLO RESO PIÙ PREMIUM */
     .hero h1 {
         font-size: 2.9rem;
         margin: 0;
@@ -63,7 +62,7 @@
         margin-top: 25px;
         display: flex;
         justify-content: center;
-        gap: 18px;
+        gap: 15px;
         flex-wrap: wrap;
     }
 
@@ -161,6 +160,40 @@
         font-size: 0.95rem;
     }
 
+    /* ABBONAMENTI */
+    .pricing {
+        background: #0b0b0b;
+        text-align: center;
+    }
+
+    .pricing-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .price-card {
+        background: #151515;
+        border: 1px solid #2a2a2a;
+        border-radius: 15px;
+        width: 280px;
+        padding: 25px;
+        transition: 0.3s;
+    }
+
+    .price-card:hover {
+        transform: translateY(-6px);
+        border-color: #fff;
+    }
+
+    .price {
+        font-size: 2rem;
+        margin: 10px 0;
+        color: #fff;
+    }
+
     footer {
         background: #000;
         color: #aaa;
@@ -185,12 +218,13 @@
             <a href="#invernali">Invernali</a>
             <a href="#estremi">Estremi</a>
             <a href="#merch">Merch</a>
+            <a href="#abbonamenti">Abbonamenti</a>
             <a href="#contatti">Contatti</a>
         </div>
     </div>
 </div>
 
-<!-- SPORT DI SQUADRA -->
+<!-- SPORT -->
 <section id="team">
     <h2>Sport di squadra</h2>
     <ul>
@@ -201,7 +235,6 @@
     </ul>
 </section>
 
-<!-- SPORT INDIVIDUALI -->
 <section id="individuali">
     <h2>Sport individuali</h2>
     <ul>
@@ -212,7 +245,6 @@
     </ul>
 </section>
 
-<!-- SPORT INVERNALI -->
 <section id="invernali">
     <h2>Sport invernali</h2>
     <ul>
@@ -222,7 +254,6 @@
     </ul>
 </section>
 
-<!-- SPORT ESTREMI -->
 <section id="estremi">
     <h2>Sport estremi</h2>
     <ul>
@@ -242,19 +273,47 @@
         <div class="card">
             <img src="https://images.unsplash.com/photo-1520975682031-a0e5a9f2a0d5">
             <h3>T-Shirt Sport</h3>
-            <p>Leggera e tecnica per allenamenti top.</p>
+            <p>Performance e leggerezza.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1618354691792-d1d42acfd860">
             <h3>T-Shirt Nike</h3>
-            <p>Stile premium per performance e lifestyle.</p>
+            <p>Stile premium sportivo.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
             <h3>Felpa Nike</h3>
-            <p>Comfort e stile per ogni situazione.</p>
+            <p>Comfort e lifestyle sportivo.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABBONAMENTI -->
+<section class="pricing" id="abbonamenti">
+    <h2>Abbonamenti</h2>
+    <p style="color:#bdbdbd;">Scegli il tuo piano sportivo</p>
+
+    <div class="pricing-cards">
+
+        <div class="price-card">
+            <h3>Base</h3>
+            <div class="price">€19/mese</div>
+            <p>Accesso palestra + sport base</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Pro</h3>
+            <div class="price">€39/mese</div>
+            <p>Tutti gli sport + allenamenti</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Elite</h3>
+            <div class="price">€69/mese</div>
+            <p>Accesso completo + eventi esclusivi</p>
         </div>
 
     </div>
