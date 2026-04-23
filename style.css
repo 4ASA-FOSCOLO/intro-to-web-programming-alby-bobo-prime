@@ -1,0 +1,200 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0f0f0f;
+        color: #eaeaea;
+    }
+
+    /* HERO */
+    .hero {
+        background-image: url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        text-align: center;
+        padding: 140px 20px 80px;
+        position: relative;
+        color: white;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero h1 {
+        font-size: 2.9rem;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        color: #cfcfcf;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        color: #eaeaea;
+        text-decoration: none;
+        padding: 8px 14px;
+        border-radius: 20px;
+        background: rgba(255,255,255,0.08);
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        background: #fff;
+        color: #000;
+    }
+
+    section {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+        color: #ffffff;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    li {
+        background: #1a1a1a;
+        margin: 12px 0;
+        padding: 18px;
+        border-radius: 12px;
+        border: 1px solid #2a2a2a;
+        font-size: 1.25rem;
+        transition: 0.3s;
+    }
+
+    li:hover {
+        transform: translateY(-4px);
+        background: #222;
+    }
+
+    /* MERCH */
+    .merch {
+        background: #0b0b0b;
+        text-align: center;
+    }
+
+    .shop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .card {
+        background: #151515;
+        width: 260px;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #2a2a2a;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border-color: #fff;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        margin: 12px 0 5px;
+        color: #fff;
+    }
+
+    .card p {
+        padding: 0 12px 15px;
+        color: #bdbdbd;
+        font-size: 0.95rem;
+    }
+
+    /* ABBONAMENTI */
+    .pricing {
+        background: #0b0b0b;
+        text-align: center;
+    }
+
+    .pricing-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .price-card {
+        background: #151515;
+        border: 1px solid #2a2a2a;
+        border-radius: 15px;
+        width: 280px;
+        padding: 25px;
+        transition: 0.3s;
+    }
+
+    .price-card:hover {
+        transform: translateY(-6px);
+        border-color: #fff;
+    }
+
+    .price {
+        font-size: 2rem;
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    footer {
+        background: #000;
+        color: #aaa;
+        text-align: center;
+        padding: 25px;
+        border-top: 1px solid #222;
+    }
+</style>
+</head>
+
+<body>
